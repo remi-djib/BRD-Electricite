@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7;
+    color: #222;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #222;
+    color: #fff;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+nav a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #666;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    padding: 2rem;
+    margin: auto;
+}
+
+/* Titres de section */
+h2 {
+    margin-top: 0;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
