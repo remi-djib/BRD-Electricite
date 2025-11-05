@@ -89,16 +89,17 @@ h2 {
     margin-top: 2rem;
 }
 
-.whatsapp-btn {
+a.whatsapp-btn {
     display: inline-block;
     padding: 0.6rem 1rem;
-    background: #25D366;
-    color: #fff;
+    background-color: #25D366 !important; /* vert WhatsApp */
+    color: #fff !important;
     text-decoration: none;
     border-radius: 6px;
+    border: none;
 }
-.whatsapp-btn:hover {
-    background: #1da851;
+a.whatsapp-btn:hover {
+    background-color: #1da851 !important;
 }
 
 /* Pied de page */
