@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@font-face {
+    font-family: 'Hurricane';
+    src: url('fonts/Hurricane-Regular.woff2') format('woff2'),
+         url('fonts/Hurricane-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 
 
