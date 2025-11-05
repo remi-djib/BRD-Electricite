@@ -5,8 +5,10 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
-
+@font-face {
+    font-family: 'Chilanka';
+    src: url('fonts/Chilanka-Regular.woff2') format('woff2');
+}
 
 body {
     margin: 0;
