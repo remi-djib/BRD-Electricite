@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -8,10 +12,46 @@ body {
 
 /* En-tête */
 header {
-    text-align: center;
-    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* h1 reste centré */
+    padding-top: 0.5rem;
     background: #222;
     color: #fff;
+}
+
+header h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: 10rem;
+    letter-spacing: 0px;
+    margin-top: 0; /* supprime l’espace ajouté par le h1 */
+    margin-bottom: 0.2rem; /* ajuster la valeur */
+    line-height: 0.9;
+}
+
+header p {
+    font-family: 'Chilanka', cursive;
+    text-align: left;
+    align-self: flex-start; /* laisse le h1 centré, déplace seulement les textes */
+}
+
+header .sous-titre {
+    font-family: 'Chilanka', cursive;
+    font-size: 2.2rem;
+    margin-top: 0.2rem;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    align-self: center;
+}
+
+header .description {
+    font-family: 'Chilanka', cursive;
+    font-size: 1.3rem; /* plus petit */
+    margin-top: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    align-self: center;
 }
 
 /* Menu */
@@ -38,7 +78,7 @@ section {
 
 /* Titres de section */
 h2 {
-    margin-top: 0;
+    margin-top: 2rem;
 }
 
 /* Pied de page */
