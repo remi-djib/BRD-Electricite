@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Page À propos : portrait -->
+    <url>
+        <loc>https://brdelectricite.github.io/apropos.html</loc>
+        <image:image>
+            <image:loc>https://brdelectricite.github.io/moi.jpg</image:loc>
+            <image:title>Rémi Brédon - Artisan Électricien à Cuers</image:title>
+        </image:image>
+    </url>
+
+    <!-- Toutes les pages : QR Code -->
+    <url>
+        <loc>https://brdelectricite.github.io/index.html</loc>
+        <image:image>
+            <image:loc>https://brdelectricite.github.io/qr.png</image:loc>
+            <image:title>QR Code BRD Électricité</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://brdelectricite.github.io/services.html</loc>
+        <image:image>
+            <image:loc>https://brdelectricite.github.io/qr.png</image:loc>
+            <image:title>QR Code BRD Électricité</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://brdelectricite.github.io/contact.html</loc>
+        <image:image>
+            <image:loc>https://brdelectricite.github.io/qr.png</image:loc>
+            <image:title>QR Code BRD Électricité</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://brdelectricite.github.io/apropos.html</loc>
+        <image:image>
+            <image:loc>https://brdelectricite.github.io/qr.png</image:loc>
+            <image:title>QR Code BRD Électricité</image:title>
+        </image:image>
+    </url>
+
+</urlset>
