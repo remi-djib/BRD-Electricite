@@ -97,6 +97,10 @@ section {
 h2 {
     margin-top: 2rem;
 }
+h3 {
+    margin-top: 2.2rem;
+    margin-left: 20px;
+}
 
 a.whatsapp-btn {
     display: inline-block;
@@ -109,6 +113,32 @@ a.whatsapp-btn {
 }
 a.whatsapp-btn:hover {
     background-color: #1da851 !important;
+}
+
+.encart-contact {
+    max-width: 260px;
+    margin-left: auto; /* aligne à droite */
+    background-color: #fff;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Chilanka', cursive;
+}
+
+.encart-contact h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.encart-contact a {
+    color: #222;
+    text-decoration: none;
+}
+
+.encart-contact a:hover {
+    text-decoration: underline;
 }
 
 /* Pied de page */
@@ -126,6 +156,7 @@ footer {
         flex-direction: column;
     }
 }
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -135,4 +166,151 @@ footer {
     overflow: hidden !important;
     clip: rect(0, 0, 0, 0) !important;
     border: 0 !important;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+.form-contact input,
+.form-contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.form-contact button {
+    padding: 0.8rem 1rem;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-contact button:hover {
+    background: #444;
+}
+
+.encart-photo {
+    float: right;
+    width: 180px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.encart-photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.encart-photo .nom-artisan {
+    margin-top: 0.5rem;
+    font-family: 'Chilanka', cursive;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 600px) {
+    .encart-photo {
+        float: none;
+        margin: 1rem auto;
+    }
+}
+
+.qr-contact {
+    width: 150px;               /* Taille maîtrisée */
+    margin-left: auto;          /* Permet l’alignement à droite */
+    margin-right: 0;            /* Bloque le positionnement à droite */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;        /* Espace avec l'encart contact */
+}
+
+.qr-contact img {
+    width: 100%;                /* Image responsive */
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bloc fixe flottant à droite */
+.zone-fixe-droite {
+    position: fixed;
+    top: 670px;            /* Distance depuis le haut (modifiable) */
+    right: 10px;           /* Aligné à droite */
+    display: flex;
+    flex-direction: row;   /* QR à gauche, Contact à droite */
+    align-items: flex-start;
+    gap: 1rem;             /* Espace entre QR et Contact */
+    z-index: 9999;         /* Toujours au-dessus */
+}
+
+/* Bloc du QR Code */
+.qr-contact {
+    width: 130px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.qr-contact img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Encart Contact flottant */
+.encart-flottant {
+    width: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    font-family: 'Chilanka', cursive;
+}
+
+/* Responsive — on masque les encarts flottants sur téléphone */
+@media (max-width: 600px) {
+    .zone-fixe-droite {
+        display: none;
+    }
+}
+
+/* HEADER FIXE EN HAUT */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+}
+
+/* MENU FIXE JUSTE SOUS LE HEADER */
+nav {
+    position: fixed;
+    top: 260px; /* Adapté à la hauteur visuelle de ton header */
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+}
+
+/* POUR ÉVITER QUE LE CONTENU PASSE SOUS LE HEADER + NAV */
+body {
+    padding-top: 320px; /* Ajusté pour dégager header + nav */
 }
