@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brdelectricite.github.io/sitemap.xml
-
+Sitemap: https://brdelectricite.github.io/sitemap-index.xml
