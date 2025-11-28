@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.brdelectricite.fr/</loc>
-    <priority>1.00</priority>
-  </url>
+
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://brdelectricite.github.io/index.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Page Services -->
+    <url>
+        <loc>https://brdelectricite.github.io/services.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Page Contact -->
+    <url>
+        <loc>https://brdelectricite.github.io/contact.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Page À propos -->
+    <url>
+        <loc>https://brdelectricite.github.io/apropos.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
+
