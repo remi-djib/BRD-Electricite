@@ -304,7 +304,7 @@ header {
 /* MENU FIXE JUSTE SOUS LE HEADER */
 nav {
     position: fixed;
-    top: 260px; /* Adapté à la hauteur visuelle de ton header */
+    top: 267px; /* Adapté à la hauteur visuelle de ton header */
     left: 0;
     width: 100%;
     z-index: 9998;
