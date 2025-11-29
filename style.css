@@ -69,6 +69,9 @@ header .description {
     line-height: 1.2;
     text-align: center;
     align-self: center;
+    max-width: 680px;     /* largeur contrôlée du texte */
+    margin-left: auto;    /* centrage horizontal */
+    margin-right: auto;   /* centrage horizontal */
 }
 
 /* Menu */
