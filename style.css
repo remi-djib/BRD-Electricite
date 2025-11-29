@@ -317,3 +317,20 @@ nav {
 body {
     padding-top: 320px; /* Ajusté pour dégager header + nav */
 }
+
+@media (max-width: 600px) {
+    .zone-fixe-droite {
+        top: 260px !important;   /* Position idéale sous le nav */
+        right: 10px;
+    }
+
+    /* Ajuste la place réservée au contenu */
+    body {
+        padding-top: 260px !important;
+    }
+
+    /* Correction fine du menu nav si besoin */
+    nav {
+        top: 190px !important;
+    }
+}
