@@ -2,101 +2,131 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Titre et description SEO de la page Services -->
     <title>Services d’électricité à Cuers | BRD Electricité</title>
     <meta name="description" content="Services d'électricité à Cuers : installation, rénovation, dépannage, mise en sécurité et mise en conformité NF C 15-100 pour particuliers et professionnels.">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
-<div class="zone-fixe-droite">
-    <div class="qr-contact">
-        <img src="qr.png" alt="QR Code BRD Électricité">
-    </div>
-
-    <div class="encart-contact encart-flottant">
-        <h3>Contact rapide</h3>
-        <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
-    </div>
-</div>
-
 <body>
 
-<header>
-    <h1 class="visually-hidden">
-        services electricien cuers, services électricien cuers,
-        installation électrique cuers, instalation electrique cuers,
-        renovation electrique cuers, rénovation électrique cuers
-    </h1>
-    <h2 class="visually-hidden">
-        depannage electrique cuers, dépannage électrique cuers,
-        mise aux normes electrique, mise au norme électrique,
-        tableau electrique, disjoncteur electrique
-    </h2>
+    <!-- Bloc fixe QR + contact rapide -->
+    <div class="zone-fixe-droite" aria-label="Accès rapide au contact BRD Electricité">
+        <div class="qr-contact">
+            <img src="qr.png" alt="QR Code BRD Électricité">
+        </div>
 
-    <div class="logo-titre">BRD Electricité</div>
-    <p class="sous-titre">Artisan Électricien</p>
-    <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
-</header>
+        <div class="encart-contact encart-flottant">
+            <h3>Contact rapide</h3>
+            <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+        </div>
+    </div>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="apropos.html">À propos</a>
-</nav>
+    <header>
+        <!-- Titres invisibles pour le référencement -->
+        <h1 class="visually-hidden">
+            services electricien cuers, services électricien cuers,
+            installation électrique cuers, instalation electrique cuers,
+            renovation electrique cuers, rénovation électrique cuers
+        </h1>
+        <h2 class="visually-hidden">
+            depannage electrique cuers, dépannage électrique cuers,
+            mise aux normes electrique, mise au norme électrique,
+            tableau electrique, disjoncteur electrique
+        </h2>
 
-<main>
-    <section class="services">
-        <h2>Services proposés - Installations, Rénovations et Dépannages</h2>
+        <div class="logo-titre">BRD Electricité</div>
+        <p class="sous-titre">Artisan Électricien</p>
+        <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
 
-        <article class="service-block">
-            <h3>Création et organisation de l’installation électrique</h3>
-            <ul>
-                <li>Conception des circuits et étude de l’implantation</li>
-                <li>Mise en place du tableau électrique et des protections</li>
-                <li>Réalisation des circuits spécialisés (cuisine, chauffe-eau, chauffage, VMC, extérieur…)</li>
-                <li>Implantation des prises, interrupteurs et éclairages selon la norme NF C 15-100</li>
-            </ul>
-        </article>
+        <!-- Bouton hamburger (mobile) -->
+        <button class="nav-toggle"
+                type="button"
+                aria-label="Ouvrir ou fermer la navigation principale"
+                aria-expanded="false"
+                aria-controls="navigation-principale">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+    </header>
 
-        <article class="service-block">
-            <h3>Installation des câbles, conduits et équipements</h3>
-            <ul>
-                <li>Passage des gaines (ICTA, moulures, goulottes)</li>
-                <li>Tirage des câbles, repérage et organisation des circuits</li>
-                <li>Pose des boîtes d’encastrement et appareillages</li>
-                <li>Installation des prises, interrupteurs, points lumineux et éclairages intérieurs / extérieurs</li>
-            </ul>
-        </article>
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="apropos.html">À propos</a>
+    </nav>
 
-        <article class="service-block">
-            <h3>Raccordement et mise en service des équipements</h3>
-            <ul>
-                <li>Raccordement des circuits au tableau électrique</li>
-                <li>Branchement des chauffe-eau, radiateurs, VMC, plaques de cuisson, sèche-serviettes</li>
-                <li>Contrôles de sécurité et essais de fonctionnement</li>
-                <li>Mise sous tension contrôlée et vérifications finales</li>
-            </ul>
-        </article>
+    <main>
+        <!-- Liste structurée des services proposés -->
+        <section class="services">
+            <h2>Services proposés - Installations, Rénovations et Dépannages</h2>
 
-        <article class="service-block">
-            <h3>Mise en sécurité, rénovation et dépannage</h3>
-            <ul>
-                <li>Vérification complète de l’installation (terre, continuité, isolement)</li>
-                <li>Mise en sécurité et mise aux normes NF C 15-100</li>
-                <li>Remplacement de tableaux électriques et protections</li>
-                <li>Dépannage en cas de coupure, défaut ou dysfonctionnement</li>
-            </ul>
-        </article>
-    </section>
-</main>
+            <article class="service-block">
+                <h3>Création et organisation de l’installation électrique</h3>
+                <ul>
+                    <li>Conception des circuits et étude de l’implantation</li>
+                    <li>Mise en place du tableau électrique et des protections</li>
+                    <li>Réalisation des circuits spécialisés (cuisine, chauffe-eau, chauffage, VMC, extérieur…)</li>
+                    <li>Implantation des prises, interrupteurs et éclairages selon la norme NF C 15-100</li>
+                </ul>
+            </article>
 
+            <article class="service-block">
+                <h3>Installation des câbles, conduits et équipements</h3>
+                <ul>
+                    <li>Passage des gaines (ICTA, moulures, goulottes)</li>
+                    <li>Tirage des câbles, repérage et organisation des circuits</li>
+                    <li>Pose des boîtes d’encastrement et appareillages</li>
+                    <li>Installation des prises, interrupteurs, points lumineux et éclairages intérieurs / extérieurs</li>
+                </ul>
+            </article>
 
-<footer>
-    © BRD Electricité — Entrepreneur Individuel
-</footer>
+            <article class="service-block">
+                <h3>Raccordement et mise en service des équipements</h3>
+                <ul>
+                    <li>Raccordement des circuits au tableau électrique</li>
+                    <li>Branchement des chauffe-eau, radiateurs, VMC, plaques de cuisson, sèche-serviettes</li>
+                    <li>Contrôles de sécurité et essais de fonctionnement</li>
+                    <li>Mise sous tension contrôlée et vérifications finales</li>
+                </ul>
+            </article>
 
+            <article class="service-block">
+                <h3>Mise en sécurité, rénovation et dépannage</h3>
+                <ul>
+                    <li>Vérification complète de l’installation (terre, continuité, isolement)</li>
+                    <li>Mise en sécurité et mise aux normes NF C 15-100</li>
+                    <li>Remplacement de tableaux électriques et protections</li>
+                    <li>Dépannage en cas de coupure, défaut ou dysfonctionnement</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        © BRD Electricité — Entrepreneur Individuel
+    </footer>
+
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var nav = document.getElementById('navigation-principale');
+
+            if (!toggle || !nav) {
+                return;
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = nav.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 </body>
 </html>
-
