@@ -1,3 +1,6 @@
+/* ---------------------------------------------------------
+   Polices personnalisées (hébergées localement)
+   --------------------------------------------------------- */
 @font-face {
     font-family: 'Hurricane';
     src: url('fonts/Hurricane-Regular.woff2') format('woff2'),
@@ -5,53 +8,86 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Chilanka';
     src: url('fonts/Chilanka-Regular.woff2') format('woff2');
 }
 
+/* ---------------------------------------------------------
+   Base globale
+   --------------------------------------------------------- */
 body {
     margin: 0;
     font-family: sans-serif;
     line-height: 1.6;
     background: #f7f7f7;
     color: #222;
+
+    /* Espace réservé au header fixe + barre de navigation en version desktop */
+    padding-top: 320px;
 }
 
-/* En-tête */
+/* Texte uniquement pour les moteurs de recherche / lecteurs d'écran */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important;
+}
+
+/* ---------------------------------------------------------
+   En-tête (desktop par défaut)
+   --------------------------------------------------------- */
 header {
     display: flex;
     flex-direction: column;
-    align-items: center; /* h1 reste centré */
+    align-items: center; /* logo centré */
     padding-top: 0.5rem;
     background: #222;
     color: #fff;
+
+    /* Header toujours visible en haut de page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
 }
 
+/* Style prévu pour un h1 visible, conservé au cas où.
+   Les h1 actuels sont masqués avec .visually-hidden. */
 header h1 {
     font-family: 'Hurricane', cursive;
     font-size: 10rem;
-    letter-spacing: 0px;
-    margin-top: 0; /* supprime l’espace ajouté par le h1 */
-    margin-bottom: 0.2rem; /* ajuster la valeur */
-    line-height: 0.9;
-}
-
-header p {
-    font-family: 'Chilanka', cursive;
-    text-align: left;
-    align-self: flex-start; /* laisse le h1 centré, déplace seulement les textes */
-}
-
-header .logo-titre {
-    font-family: 'Hurricane', cursive;
-    font-size: 10rem;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 0.2rem;
     line-height: 0.9;
 }
 
+/* Sous-éléments textuels du header */
+header p {
+    font-family: 'Chilanka', cursive;
+    text-align: left;
+    align-self: flex-start;
+}
+
+/* Logo typographique principal */
+header .logo-titre {
+    font-family: 'Hurricane', cursive;
+    font-size: 10rem;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    line-height: 0.9;
+}
+
+/* Ligne "Artisan Électricien" */
 header .sous-titre {
     font-family: 'Chilanka', cursive;
     font-size: 2.2rem;
@@ -62,34 +98,74 @@ header .sous-titre {
     align-self: center;
 }
 
+/* Phrase descriptive sous le titre */
 header .description {
     font-family: 'Chilanka', cursive;
-    font-size: 1.3rem; /* plus petit */
+    font-size: 1.3rem;
     margin-top: 1.5rem;
     line-height: 1.2;
     text-align: center;
     align-self: center;
-    max-width: 680px;     /* largeur contrôlée du texte */
-    margin-left: auto;    /* centrage horizontal */
-    margin-right: auto;   /* centrage horizontal */
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Menu */
+/* ---------------------------------------------------------
+   Navigation principale (desktop)
+   --------------------------------------------------------- */
 nav {
     display: flex;
     justify-content: center;
     background: #444;
+
+    /* Barre fixe sous le header */
+    position: fixed;
+    top: 267px; /* ajusté à la hauteur visuelle du header desktop */
+    left: 0;
+    width: 100%;
+    z-index: 9998;
 }
+
 nav a {
     color: #fff;
     padding: 1rem;
     text-decoration: none;
 }
+
 nav a:hover {
     background: #666;
 }
 
-/* Sections */
+/* ---------------------------------------------------------
+   Bouton de menu hamburger (mobile)
+   - Masqué par défaut (desktop)
+   --------------------------------------------------------- */
+.nav-toggle {
+    display: none;          /* visible uniquement dans les media queries */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Barres du hamburger */
+.nav-toggle-bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* ---------------------------------------------------------
+   Contenu principal
+   --------------------------------------------------------- */
 section {
     max-width: 800px;
     padding: 2rem;
@@ -100,11 +176,13 @@ section {
 h2 {
     margin-top: 2rem;
 }
+
 h3 {
     margin-top: 2.2rem;
     margin-left: 20px;
 }
 
+/* Bouton WhatsApp */
 a.whatsapp-btn {
     display: inline-block;
     padding: 0.6rem 1rem;
@@ -114,13 +192,17 @@ a.whatsapp-btn {
     border-radius: 6px;
     border: none;
 }
+
 a.whatsapp-btn:hover {
     background-color: #1da851 !important;
 }
 
+/* ---------------------------------------------------------
+   Encart de contact (contenu des pages) — hors zone flottante
+   --------------------------------------------------------- */
 .encart-contact {
     max-width: 260px;
-    margin-left: auto; /* aligne à droite */
+    margin-left: auto;
     background-color: #fff;
     padding: 1rem 1.2rem;
     border-radius: 8px;
@@ -144,33 +226,9 @@ a.whatsapp-btn:hover {
     text-decoration: underline;
 }
 
-/* Pied de page */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #222;
-    color: #fff;
-    margin-top: 2rem;
-}
-
-/* Responsive (mobile) */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-}
-
-.visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    border: 0 !important;
-}
-
+/* ---------------------------------------------------------
+   Formulaire de contact
+   --------------------------------------------------------- */
 .form-contact {
     display: flex;
     flex-direction: column;
@@ -201,6 +259,9 @@ footer {
     background: #444;
 }
 
+/* ---------------------------------------------------------
+   Encart photo (page À propos)
+   --------------------------------------------------------- */
 .encart-photo {
     float: right;
     width: 180px;
@@ -225,43 +286,21 @@ footer {
     line-height: 1.2;
 }
 
-/* Responsive (mobile) */
-@media (max-width: 600px) {
-    .encart-photo {
-        float: none;
-        margin: 1rem auto;
-    }
-}
-
-.qr-contact {
-    width: 150px;               /* Taille maîtrisée */
-    margin-left: auto;          /* Permet l’alignement à droite */
-    margin-right: 0;            /* Bloque le positionnement à droite */
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;        /* Espace avec l'encart contact */
-}
-
-.qr-contact img {
-    width: 100%;                /* Image responsive */
-    display: block;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Bloc fixe flottant à droite */
+/* ---------------------------------------------------------
+   Bloc fixe flottant à droite : QR code + contact
+   --------------------------------------------------------- */
 .zone-fixe-droite {
     position: fixed;
-    top: 670px;            /* Distance depuis le haut (modifiable) */
-    right: 10px;           /* Aligné à droite */
+    top: 720px;      /* distance depuis le haut de la fenêtre sur desktop */
+    right: 10px;
     display: flex;
     flex-direction: row;   /* QR à gauche, Contact à droite */
     align-items: flex-start;
-    gap: 1rem;             /* Espace entre QR et Contact */
-    z-index: 9999;         /* Toujours au-dessus */
+    gap: 1rem;
+    z-index: 9999;
 }
 
-/* Bloc du QR Code */
+/* Bloc du QR Code dans la zone flottante */
 .qr-contact {
     width: 130px;
     background: #fff;
@@ -277,60 +316,150 @@ footer {
     border-radius: 6px;
 }
 
-/* Encart Contact flottant */
+/* Encart Contact rapide — hauteur EXACTE alignée avec le QR */
 .encart-flottant {
-    width: 200px;
+    width: 242px;              /* largeur suffisante pour loger l'adresse en une ligne */
+    height: 148px;             /* EXACTEMENT la hauteur du bloc QR (calculée) */
+    padding: 0.8rem 1rem;      /* paddings inclus dans height grâce à box-sizing */
     background: #fff;
-    padding: 1rem;
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     font-family: 'Chilanka', cursive;
+
+    box-sizing: border-box;    /* height et width incluent le padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* espace maîtrisé */
 }
 
-/* Responsive — on masque les encarts flottants sur téléphone */
-@media (max-width: 600px) {
+/* Titre sur une seule ligne */
+.encart-flottant h3 {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Texte interne — email 100% visible */
+.encart-flottant p,
+.encart-flottant a {
+    font-size: 0.9rem;
+    line-height: 1.25;
+    white-space: nowrap;       /* pas de retour à la ligne */
+    overflow: hidden;          /* aucune coupure qui dépasse */
+    text-overflow: clip;
+}
+
+
+/* ---------------------------------------------------------
+   Pied de page
+   --------------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* ---------------------------------------------------------
+   Responsive : mobile / tablette (<= 768px)
+   - Réduction du header
+   - Menu hamburger
+   - Contenu en colonne
+   - Masquage de la zone flottante
+   --------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Corps de page en colonne pour maintenir le footer en bas */
+    body {
+        padding-top: 200px;          /* header plus compact */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex-shrink: 0;
+    }
+
+    /* Header compact sur mobile (même rendu desktop conservé) */
+    header .logo-titre {
+        font-size: 3.2rem;
+    }
+
+    header .sous-titre {
+        font-size: 1.6rem;
+    }
+
+    header .description {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        max-width: 90%;
+    }
+
+    /* Section : un peu moins de marge pour gagner de l’espace */
+    section {
+        padding: 1.2rem 1rem;
+    }
+
+    /* Encadré photo centré et non flottant */
+    .encart-photo {
+        float: none;
+        margin: 1rem auto;
+    }
+
+    /* Zone flottante masquée sur mobile pour ne pas gêner la lecture */
     .zone-fixe-droite {
         display: none;
     }
-}
 
-/* HEADER FIXE EN HAUT */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9998;
-}
-
-/* MENU FIXE JUSTE SOUS LE HEADER */
-nav {
-    position: fixed;
-    top: 267px; /* Adapté à la hauteur visuelle de ton header */
-    left: 0;
-    width: 100%;
-    z-index: 9998;
-}
-
-/* POUR ÉVITER QUE LE CONTENU PASSE SOUS LE HEADER + NAV */
-body {
-    padding-top: 320px; /* Ajusté pour dégager header + nav */
-}
-
-@media (max-width: 600px) {
-    .zone-fixe-droite {
-        top: 260px !important;   /* Position idéale sous le nav */
-        right: 10px;
+    /* Bouton hamburger visible et placé en haut à droite */
+    .nav-toggle {
+        display: block;
+        position: fixed;
+        top: 0.8rem;
+        right: 1rem;
+        z-index: 10000;
     }
 
-    /* Ajuste la place réservée au contenu */
-    body {
-        padding-top: 260px !important;
-    }
-
-    /* Correction fine du menu nav si besoin */
+    /* Menu replié par défaut, déroulé en colonne lorsqu'ouvert */
     nav {
-        top: 190px !important;
+        top: 120px;                  /* positionné sous le header compact */
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;               /* caché tant que nav-open n'est pas présent */
+    }
+
+    nav.nav-open {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border-top: 1px solid #555;
+    }
+}
+
+/* ---------------------------------------------------------
+   Affichage des encarts flottants UNIQUEMENT à zoom 100%
+   --------------------------------------------------------- */
+
+/* Zoom à 100 % → encarts visibles */
+@media (resolution: 1dppx) {
+    .zone-fixe-droite {
+        display: flex !important;
+    }
+}
+
+/* Zoom ≠ 100 % → encarts masqués */
+@media not (resolution: 1dppx) {
+    .zone-fixe-droite {
+        display: none !important;
     }
 }
