@@ -2,77 +2,107 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Titre et description SEO de la page Contact -->
     <title>Contact BRD Electricité | Électricien à Cuers</title>
     <meta name="description" content="Contactez BRD Électricité, artisan électricien à Cuers, pour vos demandes de devis, dépannages et projets d’installations électriques. Téléphone, email et formulaire de contact.">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
-<div class="zone-fixe-droite">
-    <div class="qr-contact">
-        <img src="qr.png" alt="QR Code BRD Électricité">
-    </div>
-
-    <div class="encart-contact encart-flottant">
-        <h3>Contact rapide</h3>
-        <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
-    </div>
-</div>
-
 <body>
 
-<header>
-    <h1 class="visually-hidden">
-        contact electricien cuers, contacter electricien cuers,
-        telephone electricien cuers, mail electricien cuers
-    </h1>
-    <h2 class="visually-hidden">
-        devis electricien cuers, urgence electrique cuers,
-        depannage electrique contact, dépannage électrique contact
-    </h2>
+    <!-- Encarts fixes QR + contact -->
+    <div class="zone-fixe-droite" aria-label="Accès rapide au contact BRD Electricité">
+        <div class="qr-contact">
+            <img src="qr.png" alt="QR Code BRD Électricité">
+        </div>
 
-    <div class="logo-titre">BRD Electricité</div>
-    <p class="sous-titre">Artisan Électricien</p>
-    <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
-</header>
+        <div class="encart-contact encart-flottant">
+            <h3>Contact rapide</h3>
+            <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+        </div>
+    </div>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="apropos.html">À propos</a>
-</nav>
+    <header>
+        <!-- Titres invisibles SEO -->
+        <h1 class="visually-hidden">
+            contact electricien cuers, contacter electricien cuers,
+            telephone electricien cuers, mail electricien cuers
+        </h1>
+        <h2 class="visually-hidden">
+            devis electricien cuers, urgence electrique cuers,
+            depannage electrique contact, dépannage électrique contact
+        </h2>
 
-<main>
-    <section>
-        <h2>Contact BRD Electricité — Électricien à Cuers</h2>
+        <div class="logo-titre">BRD Electricité</div>
+        <p class="sous-titre">Artisan Électricien</p>
+        <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
 
-        <p>Téléphone : <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p>Email direct : <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+        <!-- Bouton hamburger (mobile) -->
+        <button class="nav-toggle"
+                type="button"
+                aria-label="Ouvrir ou fermer la navigation principale"
+                aria-expanded="false"
+                aria-controls="navigation-principale">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+    </header>
 
-        <h3>Envoyer un message à votre électricien</h3>
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="apropos.html">À propos</a>
+    </nav>
 
-        <!-- Formulaire mailto (statique, compatible GitHub Pages) -->
-        <form action="mailto:contact@brdelectricite.fr" method="post" enctype="text/plain" class="form-contact">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="Nom" required>
+    <main>
+        <section>
+            <h2>Contact BRD Electricité — Électricien à Cuers</h2>
 
-            <label for="email">Votre email :</label>
-            <input type="email" id="email" name="Email" required>
+            <p>Téléphone : <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p>Email direct : <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="Message" rows="6" required></textarea>
+            <h3>Envoyer un message à votre électricien</h3>
 
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-</main>
+            <!-- Formulaire mailto (statique, compatible GitHub Pages) -->
+            <form action="mailto:contact@brdelectricite.fr" method="post" enctype="text/plain" class="form-contact">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="Nom" required>
 
-<footer>
-    © BRD Electricité — Entrepreneur Individuel
-</footer>
+                <label for="email">Votre email :</label>
+                <input type="email" id="email" name="Email" required>
 
+                <label for="message">Message :</label>
+                <textarea id="message" name="Message" rows="6" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © BRD Electricité — Entrepreneur Individuel
+    </footer>
+
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var nav = document.getElementById('navigation-principale');
+
+            if (!toggle || !nav) {
+                return;
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = nav.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 </body>
 </html>
-
