@@ -1,81 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Encodage -->
     <meta charset="utf-8">
+
+    <!-- Affichage responsive sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icône de l’onglet/navigateur -->
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Titre et description SEO de la page d’accueil -->
     <title>Électricien à Cuers (Var) | Electricien Cuers | BRD Electricité</title>
     <meta name="description" content="BRD Electricité, artisan électricien à Cuers (Var) : dépannage électrique, installations, rénovation et mise en conformité NF C 15-100. Interventions rapides et devis gratuits.">
+
+    <!-- Feuille de styles globale du site -->
     <link rel="stylesheet" href="style.css">
 </head>
-
-<div class="zone-fixe-droite">
-    <div class="qr-contact">
-        <img src="qr.png" alt="QR Code BRD Électricité">
-    </div>
-
-    <div class="encart-contact encart-flottant">
-        <h3>Contact rapide</h3>
-        <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
-    </div>
-</div>
-
 <body>
 
-<header>
-    <!-- Titres invisibles pour SEO avec variantes d'orthographe -->
-    <h1 class="visually-hidden">
-        électricien à Cuers, electricien cuers, artisan électricien cuers,
-        electricien cuer, electricien var, électricien var,
-        dépannage électrique cuers, depannage electrique cuers,
-        rénovation électrique cuers
-    </h1>
-    <h2 class="visually-hidden">
-        panne électricité cuers, panne electricite cuers,
-        mise aux normes électrique NF C 15-100, mise au norme electrique,
-        installation prise electrique, tableau electrique, disjoncteur electrique
-    </h2>
+    <!-- Bloc fixe à droite : QR code vers le site + coordonnées de contact rapide.
+         Masqué automatiquement sur mobile par le CSS. -->
+    <div class="zone-fixe-droite" aria-label="Accès rapide au contact BRD Electricité">
+        <div class="qr-contact">
+            <img src="qr.png" alt="QR Code BRD Électricité">
+        </div>
 
-    <div class="logo-titre">BRD Electricité</div>
-    <p class="sous-titre">Artisan Électricien</p>
-    <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
-</header>
+        <div class="encart-contact encart-flottant">
+            <h3>Contact rapide</h3>
+            <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+        </div>
+    </div>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="apropos.html">À propos</a>
-</nav>
+    <!-- En-tête du site : logo, sous-titre et phrase descriptive -->
+    <header>
+        <!-- Titres invisibles pour SEO avec variantes d'orthographe -->
+        <h1 class="visually-hidden">
+            électricien à Cuers, electricien cuers, artisan électricien cuers,
+            electricien cuer, electricien var, électricien var,
+            dépannage électrique cuers, depannage electrique cuers,
+            rénovation électrique cuers
+        </h1>
+        <h2 class="visually-hidden">
+            panne électricité cuers, panne electricite cuers,
+            mise aux normes électrique NF C 15-100, mise au norme electrique,
+            installation prise electrique, tableau electrique, disjoncteur electrique
+        </h2>
 
-<main>
-    <section id="services">
-        <h2><a href="services.html">Services proposés</a></h2>
-        <p>Électricien à Cuers, BRD Electricité réalise vos travaux d’installation, de rénovation et de dépannage électrique.</p>
-        <p>Travaux de mise aux normes NF C 15-100, tableaux électriques, éclairage intérieur et extérieur, prises électriques, interrupteurs et circuits spécialisés.</p>
-        <p>Interventions en neuf, rénovation et mise en conformité, pour particuliers et professionnels.</p>
-        <p>Solutions fiables, conformes et adaptées à vos besoins.</p>
-        <p>Devis gratuits.</p>
-    </section>
+        <!-- Logo typographique principal -->
+        <div class="logo-titre">BRD Electricité</div>
+        <p class="sous-titre">Artisan Électricien</p>
+        <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
 
-    <section id="contact">
-        <h2><a href="contact.html">Contact</a></h2>
-        <p>Téléphone : <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p>Email : <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
-        <p><a class="whatsapp-btn" href="https://wa.me/33759585903" target="_blank" rel="noopener">Contact WhatsApp</a></p>
-    </section>
+        <!-- Bouton de menu hamburger : visible uniquement sur mobile via CSS.
+             Le texte est caché visuellement mais accessible aux lecteurs d'écran. -->
+        <button class="nav-toggle"
+                type="button"
+                aria-label="Ouvrir ou fermer la navigation principale"
+                aria-expanded="false"
+                aria-controls="navigation-principale">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+    </header>
 
-    <section id="apropos">
-        <h2><a href="apropos.html">À propos</a></h2>
-        <p>Entrepreneur Individuel, BRD Electricité intervient à Cuers et dans les communes voisines.</p>
-        <p>Assurance Décennale et Responsabilité Civile Professionnelle.</p>
-        <p>N° SIRET : 990 991 465 000 16 — Code APE : 4321A.</p>
-    </section>
-</main>
+    <!-- Barre de navigation principale du site -->
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="apropos.html">À propos</a>
+    </nav>
 
-<footer>
-    © BRD Electricité — Entrepreneur Individuel
-</footer>
+    <!-- Contenu principal de la page d'accueil -->
+    <main>
+        <section id="services">
+            <h2><a href="services.html">Services proposés</a></h2>
+            <p>Électricien à Cuers, BRD Electricité réalise vos travaux d’installation, de rénovation et de dépannage électrique.</p>
+            <p>Travaux de mise aux normes NF C 15-100, tableaux électriques, éclairage intérieur et extérieur, prises électriques, interrupteurs et circuits spécialisés.</p>
+            <p>Interventions en neuf, rénovation et mise en conformité, pour particuliers et professionnels.</p>
+            <p>Solutions fiables, conformes et adaptées à vos besoins.</p>
+            <p>Devis gratuits.</p>
+        </section>
 
+        <section id="contact">
+            <h2><a href="contact.html">Contact</a></h2>
+            <p>Téléphone : <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p>Email : <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+            <p><a class="whatsapp-btn" href="https://wa.me/33759585903" target="_blank" rel="noopener">Contact WhatsApp</a></p>
+        </section>
+
+        <section id="apropos">
+            <h2><a href="apropos.html">À propos</a></h2>
+            <p>Entrepreneur Individuel, BRD Electricité intervient à Cuers et dans les communes voisines.</p>
+            <p>Assurance Décennale et Responsabilité Civile Professionnelle.</p>
+            <p>N° SIRET : 990 991 465 000 16 — Code APE : 4321A.</p>
+        </section>
+    </main>
+
+    <!-- Pied de page commun -->
+    <footer>
+        © BRD Electricité — Entrepreneur Individuel
+    </footer>
+
+    <!-- Script léger pour le menu hamburger (aucun impact sur le desktop) -->
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var nav = document.getElementById('navigation-principale');
+
+            if (!toggle || !nav) {
+                return;
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = nav.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 </body>
 </html>
