@@ -2,88 +2,118 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Titre et description SEO de la page À propos -->
     <title>À propos de BRD Electricité | Électricien à Cuers</title>
     <meta name="description" content="À propos de BRD Electricité, artisan électricien à Cuers (BAC Pro MELEC) : expérience, compétences, engagements et informations légales.">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
-<div class="zone-fixe-droite">
-    <div class="qr-contact">
-        <img src="qr.png" alt="QR Code BRD Électricité">
-    </div>
-
-    <div class="encart-contact encart-flottant">
-        <h3>Contact rapide</h3>
-        <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
-        <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
-    </div>
-</div>
-
 <body>
 
-<header>
-    <h1 class="visually-hidden">
-        electricien cuers, électricien cuers, artisan électricien cuers,
-        electricien var, électricien var, electricien batiment cuers
-    </h1>
-    <h2 class="visually-hidden">
-        profil electricien cuers, presentation electricien cuers,
-        artisan diplome melec, bac pro melec
-    </h2>
+    <!-- Encarts fixes QR + contact -->
+    <div class="zone-fixe-droite" aria-label="Accès rapide au contact BRD Electricité">
+        <div class="qr-contact">
+            <img src="qr.png" alt="QR Code BRD Électricité">
+        </div>
 
-    <div class="logo-titre">BRD Electricité</div>
-    <p class="sous-titre">Artisan Électricien</p>
-    <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
-</header>
+        <div class="encart-contact encart-flottant">
+            <h3>Contact rapide</h3>
+            <p><strong>Tél. :</strong> <a href="tel:+33759585903">07 59 58 59 03</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@brdelectricite.fr">contact@brdelectricite.fr</a></p>
+        </div>
+    </div>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="apropos.html">À propos</a>
-</nav>
+    <header>
+        <!-- Titres invisibles pour le référencement -->
+        <h1 class="visually-hidden">
+            electricien cuers, électricien cuers, artisan électricien cuers,
+            electricien var, électricien var, electricien batiment cuers
+        </h1>
+        <h2 class="visually-hidden">
+            profil electricien cuers, presentation electricien cuers,
+            artisan diplome melec, bac pro melec
+        </h2>
 
-<!-- Photo uniquement sur la page À propos -->
-<div class="encart-photo">
-    <img src="moi.jpg" alt="Rémi Brédon - Artisan électricien à Cuers">
-    <p class="nom-artisan">Rémi Brédon<br>Artisan Électricien</p>
-</div>
+        <div class="logo-titre">BRD Electricité</div>
+        <p class="sous-titre">Artisan Électricien</p>
+        <p class="description">Travaux d'installation, de maintenance et de dépannage électriques dans le bâtiment (neuf et rénovation).</p>
 
-<main>
-    <section>
-        <h2>À propos de BRD Electricité — Électricien à Cuers</h2>
+        <!-- Bouton hamburger (mobile) -->
+        <button class="nav-toggle"
+                type="button"
+                aria-label="Ouvrir ou fermer la navigation principale"
+                aria-expanded="false"
+                aria-controls="navigation-principale">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+    </header>
 
-        <p>BRD Electricité est une entreprise d’électricité générale basée à Cuers, spécialisée dans l’installation, la rénovation, la mise en conformité et le dépannage électrique pour particuliers et professionnels.</p>
+    <nav id="navigation-principale" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="apropos.html">À propos</a>
+    </nav>
 
-        <h3>Votre artisan électricien diplômé (BAC Pro MELEC)</h3>
-        <p>Artisan électricien diplômé, j’interviens en neuf comme en rénovation, dans le respect strict des normes et des règles en vigueur, avec une exigence constante de qualité et de sécurité.</p>
+    <!-- Encart photo spécifique à la page À propos -->
+    <div class="encart-photo">
+        <img src="moi.jpg" alt="Rémi Brédon - Artisan électricien à Cuers">
+        <p class="nom-artisan">Rémi Brédon<br>Artisan Électricien</p>
+    </div>
 
-        <h3>Compétences et prestations</h3>
-        <ul>
-            <li>Installations électriques neuves et rénovation</li>
-            <li>Mise en conformité NF C 15-100</li>
-            <li>Tableaux électriques et protections différentielles</li>
-            <li>Éclairage intérieur et extérieur</li>
-            <li>Dépannage et recherche de pannes</li>
-            <li>Circuits spécialisés (chauffage, cuisine, VMC, extérieur…)</li>
-        </ul>
+    <main>
+        <section>
+            <h2>À propos de BRD Electricité — Électricien à Cuers</h2>
 
-        <h3>Mes engagements</h3>
-        <p>Interventions soignées, respect des normes, matériel de qualité, sécurité des installations, transparence des devis et accompagnement du client.</p>
+            <p>BRD Electricité est une entreprise d’électricité générale basée à Cuers, spécialisée dans l’installation, la rénovation, la mise en conformité et le dépannage électrique pour particuliers et professionnels.</p>
 
-        <h3>Informations légales</h3>
-        <p>Entrepreneur Individuel</p>
-        <p>SIRET : 990 991 465 000 16</p>
-        <p>Code APE : 4321A</p>
-        <p>Assurance Décennale & Responsabilité Civile Professionnelle</p>
-    </section>
-</main>
+            <h3>Votre artisan électricien diplômé (BAC Pro MELEC)</h3>
+            <p>Artisan électricien diplômé, j’interviens en neuf comme en rénovation, dans le respect strict des normes et des règles en vigueur, avec une exigence constante de qualité et de sécurité.</p>
 
-<footer>
-    © BRD Electricité — Entrepreneur Individuel
-</footer>
+            <h3>Compétences et prestations</h3>
+            <ul>
+                <li>Installations électriques neuves et rénovation</li>
+                <li>Mise en conformité NF C 15-100</li>
+                <li>Tableaux électriques et protections différentielles</li>
+                <li>Éclairage intérieur et extérieur</li>
+                <li>Dépannage et recherche de pannes</li>
+                <li>Circuits spécialisés (chauffage, cuisine, VMC, extérieur…)</li>
+            </ul>
 
+            <h3>Mes engagements</h3>
+            <p>Interventions soignées, respect des normes, matériel de qualité, sécurité des installations, transparence des devis et accompagnement du client.</p>
+
+            <h3>Informations légales</h3>
+            <p>Entrepreneur Individuel</p>
+            <p>SIRET : 990 991 465 000 16</p>
+            <p>Code APE : 4321A</p>
+            <p>Assurance Décennale & Responsabilité Civile Professionnelle</p>
+        </section>
+    </main>
+
+    <footer>
+        © BRD Electricité — Entrepreneur Individuel
+    </footer>
+
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var nav = document.getElementById('navigation-principale');
+
+            if (!toggle || !nav) {
+                return;
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = nav.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 </body>
 </html>
-
